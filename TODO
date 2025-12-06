@@ -1,0 +1,56 @@
+COMPLETED:
+
+
+- Relative Number
+- Number line
+- undo history
+- cursor line
+
+
+What is Needed
+
+- Replacements for each work related package
+	- Prettier
+	- IntelliCode
+	- ESLint
+	- Intellisense
+	- GitLens
+- LSP
+- TreeSitter
+- Themery
+- Color Schemes
+- Lua Line / Airline
+- Telescope
+- Packer
+- nvim-cmp
+- Mason
+- Neo-tree
+- Git Tools
+- Connect to clipboard
+- Smooth Scrolling
+- code folding
+
+Potential
+- LuaSnip
+- Turning off line wrapping
+- alpha
+- autocommand
+- Searching
+- Trouble
+- lspSaga
+- autopairs
+- fidget
+- telescope-fzf-native
+- Buffer line
+- Which Key
+- indent-blankline.nvim
+- gitsigns.nvim 
+- todo-comments.nvim 
+- autopairs 
+- comment.nvim 
+- None ls
+- Toggle term
+- project
+- persistence
+- harpoon
+
