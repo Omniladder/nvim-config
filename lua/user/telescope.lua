@@ -6,6 +6,14 @@ end
 local actions = require 'telescope.actions'
 
 telescope.setup {
+    defaults = {
+        file_ignore_patterns = {
+            "node_modules",
+            "dist",
+            "build",
+            "%.lock", -- optional
+        },
+    },
     mappings = {
       i = {
         ["<C-n>"] = actions.cycle_history_next,

@@ -3,11 +3,17 @@ COMPLETED:
 
 - Relative Number
 - Number line
+- Turning off line wrapping
 - undo history
 - cursor line
 - Packer
 - TreeSitter
-
+- LSP
+- Telescope
+- Connect to clipboard
+- Mason
+- Lua Line / Airline
+- Neo-tree
 
 What is Needed
 
@@ -17,20 +23,13 @@ What is Needed
 	- ESLint
 	- Intellisense
 	- GitLens
-- LSP
-- Lua Line / Airline
-- Telescope
 - nvim-cmp
-- Mason
-- Neo-tree
 - Git Tools
-- Connect to clipboard
 - Smooth Scrolling
 - code folding
 
 Potential
 - LuaSnip
-- Turning off line wrapping
 - alpha
 - autocommand
 - Searching
