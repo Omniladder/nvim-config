@@ -9,4 +9,6 @@ require 'user.lsp.init'
 require 'user.neoscroll'
 require 'user.alpha'
 require 'user.search'
+require 'user.bufferline'
 require 'user.setup'
+

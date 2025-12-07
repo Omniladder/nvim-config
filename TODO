@@ -26,10 +26,11 @@ COMPLETED:
 - comment.nvim 
 - indent-blankline.nvim
 - gitsigns.nvim 
+- Searching
+
 
 Potential
 - vgit
-- Searching
 - Trouble
 - Buffer line
 - None ls <- Pair with prettier
@@ -37,4 +38,5 @@ Potential
 - project
 - persistence
 - harpoon
+- Remote Use Nvim
 

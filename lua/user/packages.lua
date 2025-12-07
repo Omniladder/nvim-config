@@ -50,6 +50,10 @@ local packages = {
     'lukas-reineke/indent-blankline.nvim',
     'folke/todo-comments.nvim',
     'j-hui/fidget.nvim',
+    {
+        'akinsho/bufferline.nvim',
+        requires = {'nvim-tree/nvim-web-devicons'}
+    }
 };
 
 return packages;
