@@ -5,6 +5,8 @@ COMPLETED:
 - Number line
 - undo history
 - cursor line
+- Packer
+- TreeSitter
 
 
 What is Needed
@@ -16,12 +18,8 @@ What is Needed
 	- Intellisense
 	- GitLens
 - LSP
-- TreeSitter
-- Themery
-- Color Schemes
 - Lua Line / Airline
 - Telescope
-- Packer
 - nvim-cmp
 - Mason
 - Neo-tree
