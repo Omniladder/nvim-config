@@ -64,7 +64,7 @@ local packages = {
         'nvimtools/none-ls.nvim',
         requires = {'nvimtools/none-ls-extras.nvim'}
     },
-    'folke/persistence.nvim'
+    'folke/persistence.nvim',
 };
 
 return packages;

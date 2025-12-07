@@ -13,5 +13,6 @@ require 'user.bufferline'
 require 'user.toggleterm'
 require 'user.null-ls'
 require 'user.persistence'
+require 'user.remote'
 require 'user.setup'
 
