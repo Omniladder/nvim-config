@@ -17,7 +17,6 @@ cmp.setup({
         { name = 'nvim_lsp' },  -- LSP suggestions
         { name = 'buffer' },    -- words from buffer
         { name = 'path' },       -- file paths
-        { name = 'cmdline' },    -- command-line completion
         { name = 'vsnip' },      -- snippet completions
     })
 

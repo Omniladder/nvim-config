@@ -36,7 +36,8 @@ local packages = {
     'hrsh7th/cmp-path',
     'hrsh7th/cmp-cmdline',
     'hrsh7th/cmp-vsnip',
-    'karb94/neoscroll.nvim'
+    'karb94/neoscroll.nvim',
+    'prettier/vim-prettier'
 };
 
 return packages;

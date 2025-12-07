@@ -35,5 +35,7 @@ vim.keymap.set("n", "gr", "<cmd>lua vim.lsp.buf.references()<CR>", {desc = "Goes
 -- Neotree Keymaps
 vim.keymap.set('n', '<leader>cc', ":Neotree close<CR>", {desc = "Closes Neo Tree"})
 
+-- Prettier
+vim.keymap.set('n', '<leader>pp', ":Prettier<CR>", {desc = "Runs Prettier"})
 
 

@@ -15,18 +15,9 @@ COMPLETED:
 - Lua Line / Airline
 - Neo-tree
 - nvim-cmp
-- code folding
-
-What is Needed
-
-- Replacements for each work related package
-	- Prettier
-	- IntelliCode
-	- ESLint
-	- Intellisense
-	- GitLens
-- Git Tools
 - Smooth Scrolling
+- code folding
+- Prettier
 
 Potential
 - LuaSnip
