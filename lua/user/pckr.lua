@@ -1,3 +1,7 @@
+-- Code relating to package installer pckr
+
+-- Automatically Updates Packages when SO
+package.loaded["user.packages"] = nil 
 local packages = require("user.packages")
 
 local function bootstrap_pckr()
@@ -17,6 +21,7 @@ local function bootstrap_pckr()
 end
 
 bootstrap_pckr()
+
 
 for _, package_name in ipairs(packages) do
     require('pckr').add{package_name}
