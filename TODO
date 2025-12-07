@@ -14,6 +14,7 @@ COMPLETED:
 - Mason
 - Lua Line / Airline
 - Neo-tree
+- nvim-cmp
 
 What is Needed
 
@@ -23,7 +24,6 @@ What is Needed
 	- ESLint
 	- Intellisense
 	- GitLens
-- nvim-cmp
 - Git Tools
 - Smooth Scrolling
 - code folding

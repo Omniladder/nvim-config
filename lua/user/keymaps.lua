@@ -26,12 +26,13 @@ vim.keymap.set('n', '<leader>1', ":Themery<CR>",{ desc = 'Open Themery Menu' })
 vim.keymap.set('n', '<leader>`', ":Mason<CR>", { desc = "Opens Mason GUI"})
 vim.keymap.set('n', 'gD', "<cmd>lua vim.lsp.buf.declaration()<CR>", { desc = "Goes to declaration " })
 vim.keymap.set('n', 'gd', "<cmd>lua vim.lsp.buf.definition()<CR>", { desc = "Goes to definition " })
-vim.keymap.set('n', 'K', "<cmd>lua vim.lsp.buf.hover()<CR>", { desc = "Hovers over term" })
+vim.keymap.set('n', '<leader>k', "<cmd>lua vim.lsp.buf.hover()<CR>", { desc = "Describes Term" })
+vim.keymap.set('n', '<leader>d', "<cmd>lua vim.diagnostic.open_float()<CR>", { desc = "Shows Error" })
 vim.keymap.set("n", "gI", "<cmd>lua vim.lsp.buf.implementation()<CR>", {desc = "Goes to Implmentation"})
 vim.keymap.set("n", "gr", "<cmd>lua vim.lsp.buf.references()<CR>", {desc = "Goes to references"})
 
 -- Neotree Keymaps
-vim.keymap.set('n', '<leader>C-<Left>', ":Neotree focus<CR>", {desc = "Puts Neotree in focus"})
+vim.keymap.set('n', '<leader>cc', ":Neotree close<CR>", {desc = "Closes Neo Tree"})
 
 -- nvim-cmp
 
