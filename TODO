@@ -15,6 +15,7 @@ COMPLETED:
 - Lua Line / Airline
 - Neo-tree
 - nvim-cmp
+- code folding
 
 What is Needed
 
@@ -26,10 +27,10 @@ What is Needed
 	- GitLens
 - Git Tools
 - Smooth Scrolling
-- code folding
 
 Potential
 - LuaSnip
+- vgit
 - alpha
 - autocommand
 - Searching

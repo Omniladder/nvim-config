@@ -5,4 +5,5 @@ require "user.themery"
 require 'user.treesitter'
 require 'user.lualine'
 require 'user.lsp.init'
+require 'user.neoscroll'
 require "user.keymaps"

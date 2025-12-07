@@ -12,6 +12,7 @@ vim.keymap.set("n", "<leader>fe", ":e .<CR>", {noremap = true, silent = true})
     -- Moving tabs
 vim.keymap.set("n", "<leader><Left>", ":tabprev<CR>", {noremap = true, silent = true})
 vim.keymap.set("n", "<leader><Right>", ":tabnext<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<leader>z', 'za', { noremap = true, silent = true })
 
 -- Telescope Keybindings
 vim.keymap.set('n', '<leader>ff', telescope.find_files, { desc = 'Telescope find files' })
@@ -34,6 +35,5 @@ vim.keymap.set("n", "gr", "<cmd>lua vim.lsp.buf.references()<CR>", {desc = "Goes
 -- Neotree Keymaps
 vim.keymap.set('n', '<leader>cc', ":Neotree close<CR>", {desc = "Closes Neo Tree"})
 
--- nvim-cmp
 
 

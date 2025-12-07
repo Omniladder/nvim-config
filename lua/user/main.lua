@@ -29,4 +29,9 @@ vim.opt.hlsearch = true       -- highlight search results
 vim.opt.incsearch = true      -- show matches as you type
 vim.opt.ignorecase = true
 
+-- Code Folding
+vim.o.foldmethod = 'expr'
+vim.o.foldexpr = 'nvim_treesitter#foldexpr()'
+vim.o.foldlevelstart = 99 
+
 
