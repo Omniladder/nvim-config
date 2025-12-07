@@ -27,16 +27,16 @@ COMPLETED:
 - indent-blankline.nvim
 - gitsigns.nvim 
 - Searching
+- Buffer line
+- harpoon
+- Toggle term
 
 
 Potential
 - vgit
 - Trouble
-- Buffer line
 - None ls <- Pair with prettier
-- Toggle term
 - project
 - persistence
-- harpoon
 - Remote Use Nvim
 

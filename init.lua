@@ -10,5 +10,6 @@ require 'user.neoscroll'
 require 'user.alpha'
 require 'user.search'
 require 'user.bufferline'
+require 'user.toggleterm'
 require 'user.setup'
 

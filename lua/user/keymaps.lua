@@ -3,6 +3,7 @@
 -- Imports
 local telescope = require('telescope.builtin')
 local map = vim.keymap.set;
+local harpoon = require("harpoon")
 
 -- Set Leader Key
 
@@ -10,11 +11,25 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 -- Default Nvim Keybindings
-map("n", "<leader>tt", ":tabnew<CR>", {noremap = true, silent = true})
-map("n", "<leader>fe", ":e .<CR>", {noremap = true, silent = true})
+    map("n", "<leader>tt", ":tabnew<CR>", {noremap = true, silent = true})
+    map("n", "<leader>fe", ":e .<CR>", {noremap = true, silent = true})
+
     -- Moving tabs
-map("n", "<leader><Left>", ":tabprev<CR>", {noremap = true, silent = true})
-map("n", "<leader><Right>", ":tabnext<CR>", {noremap = true, silent = true})
+    map("n", "<leader><Left>", ":tabprev<CR>", {noremap = true, silent = true})
+    map("n", "<leader><Right>", ":tabnext<CR>", {noremap = true, silent = true})
+
+    -- Move between splits
+    vim.keymap.set("t", "<C-h>", [[<C-\><C-n><C-w>h]])
+    vim.keymap.set("t", "<C-j>", [[<C-\><C-n><C-w>j]])
+    vim.keymap.set("t", "<C-k>", [[<C-\><C-n><C-w>k]])
+    vim.keymap.set("t", "<C-l>", [[<C-\><C-n><C-w>l]])
+    
+    vim.keymap.set("n", "<C-h>", "<C-w>h")
+    vim.keymap.set("n", "<C-j>", "<C-w>j")
+    vim.keymap.set("n", "<C-k>", "<C-w>k")
+    vim.keymap.set("n", "<C-l>", "<C-w>l")
+
+    -- Folding
 vim.api.nvim_set_keymap('n', '<leader>z', 'za', { noremap = true, silent = true })
 
 -- Telescope/Search Keybindings
@@ -52,11 +67,17 @@ map("n", "<S-Tab>", ":BufferLineCyclePrev<CR>", { desc = "Previous buffer" })
 map("n", "<leader>bd", ":bd<CR>", { desc = "Delete buffer" })
 map("n", "<leader>bc", ":BufferLinePickClose<CR>", { desc = "Pick buffer to close" })
 
+-- Harpoon
+map("n", "<leader>a", function() harpoon:list():add() end);
+map("n", "<leader><up>", function() harpoon:list():next() end);
+map("n", "<leader><down>", function() harpoon:list():prev() end);
+map("n", "<leader>hh", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)
 
-
-
-
-
+-- Toggle Term
+map("n", "<leader>th", ":ToggleTerm direction=horizontal<CR>", { desc = "Horizontal Terminal" })
+map("n", "<leader>tv", ":ToggleTerm size=50 direction=vertical<CR>", { desc = "Vertical Terminal" })
+map("n", "<leader>tf", ":ToggleTerm direction=float<CR>", { desc = "Floating Terminal" })
+map("t", "<Esc><Esc>", [[<C-\><C-n>]], { desc = "Exit terminal mode" })
 
 
 

@@ -53,7 +53,13 @@ local packages = {
     {
         'akinsho/bufferline.nvim',
         requires = {'nvim-tree/nvim-web-devicons'}
-    }
+    },
+    {
+        'ThePrimeagen/harpoon',
+        branch = "harpoon2",
+        requires = {'nvim-lua/plenary.nvim'}
+    },
+    'akinsho/toggleterm.nvim'
 };
 
 return packages;
