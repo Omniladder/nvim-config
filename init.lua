@@ -11,5 +11,7 @@ require 'user.alpha'
 require 'user.search'
 require 'user.bufferline'
 require 'user.toggleterm'
+require 'user.null-ls'
+require 'user.persistence'
 require 'user.setup'
 

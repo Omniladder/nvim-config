@@ -1,6 +1,6 @@
 -- File Dedicated too assigning each keymapping
 
--- Imports
+-- variables
 local telescope = require('telescope.builtin')
 local map = vim.keymap.set;
 local harpoon = require("harpoon")
@@ -19,18 +19,24 @@ vim.g.maplocalleader = " "
     map("n", "<leader><Right>", ":tabnext<CR>", {noremap = true, silent = true})
 
     -- Move between splits
-    vim.keymap.set("t", "<C-h>", [[<C-\><C-n><C-w>h]])
-    vim.keymap.set("t", "<C-j>", [[<C-\><C-n><C-w>j]])
-    vim.keymap.set("t", "<C-k>", [[<C-\><C-n><C-w>k]])
-    vim.keymap.set("t", "<C-l>", [[<C-\><C-n><C-w>l]])
+    map("t", "<C-h>", [[<C-\><C-n><C-w>h]])
+    map("t", "<C-j>", [[<C-\><C-n><C-w>j]])
+    map("t", "<C-k>", [[<C-\><C-n><C-w>k]])
+    map("t", "<C-l>", [[<C-\><C-n><C-w>l]])
     
-    vim.keymap.set("n", "<C-h>", "<C-w>h")
-    vim.keymap.set("n", "<C-j>", "<C-w>j")
-    vim.keymap.set("n", "<C-k>", "<C-w>k")
-    vim.keymap.set("n", "<C-l>", "<C-w>l")
+    map("n", "<C-h>", "<C-w>h")
+    map("n", "<C-j>", "<C-w>j")
+    map("n", "<C-k>", "<C-w>k")
+    map("n", "<C-l>", "<C-w>l")
 
     -- Folding
-vim.api.nvim_set_keymap('n', '<leader>z', 'za', { noremap = true, silent = true })
+    vim.api.nvim_set_keymap('n', '<leader>z', 'za', { noremap = true, silent = true })
+
+    -- Resize splits
+    map("n", "<C-Up>", ":resize +2<CR>")
+    map("n", "<C-Down>", ":resize -2<CR>")
+    map("n", "<C-Left>", ":vertical resize -2<CR>")
+    map("n", "<C-Right>", ":vertical resize +2<CR>")
 
 -- Telescope/Search Keybindings
 
@@ -81,4 +87,8 @@ map("t", "<Esc><Esc>", [[<C-\><C-n>]], { desc = "Exit terminal mode" })
 
 
 
+-- Persistence
+map("n", "<leader>sl", ":lua require('persistence').load()<CR>", { noremap = true, silent = true })
+map("n", "<leader>sd", ":lua require('persistence').stop()<CR>", { noremap = true, silent = true }) 
+map("n", "<leader>ss", ":lua require('persistence').save()<CR>", { noremap = true, silent = true })
 

@@ -59,7 +59,12 @@ local packages = {
         branch = "harpoon2",
         requires = {'nvim-lua/plenary.nvim'}
     },
-    'akinsho/toggleterm.nvim'
+    'akinsho/toggleterm.nvim',
+    {
+        'nvimtools/none-ls.nvim',
+        requires = {'nvimtools/none-ls-extras.nvim'}
+    },
+    'folke/persistence.nvim'
 };
 
 return packages;

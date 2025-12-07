@@ -30,12 +30,14 @@ COMPLETED:
 - Buffer line
 - harpoon
 - Toggle term
+- None ls <- Pair with prettier
+
+
 
 
 Potential
 - vgit
 - Trouble
-- None ls <- Pair with prettier
 - project
 - persistence
 - Remote Use Nvim
