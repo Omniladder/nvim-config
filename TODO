@@ -18,26 +18,22 @@ COMPLETED:
 - Smooth Scrolling
 - code folding
 - Prettier
-
-Potential
-- LuaSnip
-- vgit
-- alpha
-- autocommand
-- Searching
-- Trouble
-- lspSaga
-- autopairs
-- fidget
-- telescope-fzf-native
-- Buffer line
 - Which Key
-- indent-blankline.nvim
-- gitsigns.nvim 
+- alpha
+- fidget
 - todo-comments.nvim 
 - autopairs 
 - comment.nvim 
-- None ls
+- indent-blankline.nvim
+- gitsigns.nvim 
+
+Potential
+- vgit
+- Searching
+- Trouble
+- telescope-fzf-native
+- Buffer line
+- None ls <- Pair with prettier
 - Toggle term
 - project
 - persistence

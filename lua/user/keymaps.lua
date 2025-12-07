@@ -4,7 +4,9 @@
 local telescope = require('telescope.builtin')
 
 -- Set Leader Key
+
 vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
 -- Default Nvim Keybindings
 vim.keymap.set("n", "<leader>tt", ":tabnew<CR>", {noremap = true, silent = true})

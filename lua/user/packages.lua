@@ -37,7 +37,19 @@ local packages = {
     'hrsh7th/cmp-cmdline',
     'hrsh7th/cmp-vsnip',
     'karb94/neoscroll.nvim',
-    'prettier/vim-prettier'
+    'prettier/vim-prettier',
+    'folke/which-key.nvim',
+    'goolord/alpha-nvim',
+    {
+        "FabianWirth/search.nvim",
+        requires = { "nvim-telescope/telescope.nvim" }
+    },
+    'windwp/nvim-autopairs',
+    'numToStr/Comment.nvim',
+    'lewis6991/gitsigns.nvim',
+    'lukas-reineke/indent-blankline.nvim',
+    'folke/todo-comments.nvim',
+    'j-hui/fidget.nvim',
 };
 
 return packages;

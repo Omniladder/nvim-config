@@ -1,0 +1,6 @@
+require('nvim-autopairs').setup({})
+require("Comment").setup()
+require("gitsigns").setup()
+require("ibl").setup()
+require("todo-comments").setup()
+require("fidget").setup()
