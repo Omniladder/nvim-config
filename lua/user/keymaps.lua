@@ -16,8 +16,10 @@ vim.keymap.set("n", "<leader><Left>", ":tabprev<CR>", {noremap = true, silent = 
 vim.keymap.set("n", "<leader><Right>", ":tabnext<CR>", {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<leader>z', 'za', { noremap = true, silent = true })
 
--- Telescope Keybindings
-vim.keymap.set('n', '<leader>ff', telescope.find_files, { desc = 'Telescope find files' })
+-- Telescope/Search Keybindings
+
+vim.keymap.set('n', '<leader>ff', require('search').open, { desc = 'Telescope find files' })
+vim.keymap.set('n', '<leader>fy', telescope.find_files, { desc = 'Telescope find files' })
 vim.keymap.set('n', '<leader>fg', telescope.live_grep, { desc = 'Telescope live grep' })
 vim.keymap.set('n', '<leader>fb', telescope.buffers, { desc = 'Telescope buffers' })
 vim.keymap.set('n', '<leader>fh', telescope.help_tags, { desc = 'Telescope help tags' })

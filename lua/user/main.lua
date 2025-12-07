@@ -34,4 +34,6 @@ vim.o.foldmethod = 'expr'
 vim.o.foldexpr = 'nvim_treesitter#foldexpr()'
 vim.o.foldlevelstart = 99 
 
+-- Mouse support so others can use lol if need be
+vim.opt.mouse = "a"
 
