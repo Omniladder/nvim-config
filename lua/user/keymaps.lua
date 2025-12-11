@@ -51,12 +51,12 @@ map('n', '<leader>1', ":Themery<CR>",{ desc = 'Open Themery Menu' })
 
 -- Mason / LSP
 map('n', '<leader>`', ":Mason<CR>", { desc = "Opens Mason GUI"})
-map('n', 'gD', "<cmd>lua vim.lsp.buf.declaration()<CR>", { desc = "Goes to declaration " })
-map('n', 'gd', "<cmd>lua vim.lsp.buf.definition()<CR>", { desc = "Goes to definition " })
+map('n', '<leader>gD', "<cmd>lua vim.lsp.buf.declaration()<CR>", { desc = "Goes to declaration " })
+map('n', '<leader>gd', "<cmd>lua vim.lsp.buf.definition()<CR>", { desc = "Goes to definition " })
 map('n', '<leader>k', "<cmd>lua vim.lsp.buf.hover()<CR>", { desc = "Describes Term" })
 map('n', '<leader>d', "<cmd>lua vim.diagnostic.open_float()<CR>", { desc = "Shows Error" })
-map("n", "gI", "<cmd>lua vim.lsp.buf.implementation()<CR>", {desc = "Goes to implementation"})
-map("n", "gr", "<cmd>lua vim.lsp.buf.references()<CR>", {desc = "Goes to references"})
+map("n", "<leader>gI", "<cmd>lua vim.lsp.buf.implementation()<CR>", {desc = "Goes to implementation"})
+map("n", "<leader>gr", "<cmd>lua vim.lsp.buf.references()<CR>", {desc = "Goes to references"})
 
 -- Neotree Keymaps
 map('n', '<leader>cc', ":Neotree close<CR>", {desc = "Closes Neo Tree"})
@@ -74,10 +74,10 @@ map("n", "<leader>bd", ":bd<CR>", { desc = "Delete buffer" })
 map("n", "<leader>bc", ":BufferLinePickClose<CR>", { desc = "Pick buffer to close" })
 
 -- Harpoon
-map("n", "<leader>a", function() harpoon:list():add() end);
-map("n", "<leader><up>", function() harpoon:list():next() end);
-map("n", "<leader><down>", function() harpoon:list():prev() end);
-map("n", "<leader>hh", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)
+map("n", "<leader>a", function() harpoon:list():add() end, {desc = "Add page to harpoon list"});
+map("n", "<leader><up>", function() harpoon:list():next() end, {desc = "Go to next harpoon pin"});
+map("n", "<leader><down>", function() harpoon:list():prev() end ,{desc = "Go to previous harpoon pin"});
+map("n", "<leader>hh", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end, {desc = "Open Harpoon GUI"})
 
 -- Toggle Term
 map("n", "<leader>th", ":ToggleTerm direction=horizontal<CR>", { desc = "Horizontal Terminal" })

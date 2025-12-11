@@ -23,7 +23,9 @@ end
 bootstrap_pckr()
 
 
-for _, package_name in ipairs(packages) do
-    require('pckr').add{package_name}
-end
+require('pckr').add(packages)
+--for _, package_name in ipairs(packages) do
+--    require('pckr').add{package_name};
+--end
+
 
