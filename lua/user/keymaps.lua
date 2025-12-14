@@ -66,12 +66,9 @@ map('n', '<leader>pp', ":Prettier<CR>", {desc = "Runs Prettier"})
 
 -- Bufferline
 
-map("n", "<Tab>", ":BufferLineCycleNext<CR>", { desc = "Next buffer" })
-map("n", "<S-Tab>", ":BufferLineCyclePrev<CR>", { desc = "Previous buffer" })
+map("n", "<Tab>", ":tabnext<CR>", { desc = "Next tab" })
+map("n", "<S-Tab>", ":tabprevious<CR>", { desc = "Previous tab" })
 
--- Close buffers
-map("n", "<leader>bd", ":bd<CR>", { desc = "Delete buffer" })
-map("n", "<leader>bc", ":BufferLinePickClose<CR>", { desc = "Pick buffer to close" })
 
 -- Harpoon
 map("n", "<leader>a", function() harpoon:list():add() end, {desc = "Add page to harpoon list"});
