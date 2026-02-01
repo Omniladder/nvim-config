@@ -1,5 +1,13 @@
 local color_schemes = {
     {
+        name = "Catppuccin",
+        colorscheme = "catppuccin",
+        before = [[
+        vim.opt.background = "dark"
+        vim.opt.background.dark = "mocha"
+        ]]
+    },
+    {
         name = "Gruvbox Dark Hard",
         colorscheme = "gruvbox",
         before = [[
@@ -21,15 +29,7 @@ local color_schemes = {
         vim.opt.background = "light"
         ]]
     },
-    {
-        name = "Catppuccin",
-        colorscheme = "catppuccin",
-        before = [[
-        vim.opt.background = "dark"
-        vim.opt.background.dark = "mocha"
-        ]]
-    },
-    {
+        {
         name = "Moonfly",
         colorscheme = "moonfly",
         before = [[

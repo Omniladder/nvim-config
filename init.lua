@@ -1,17 +1,3 @@
-require "user.main"
 require "user.pckr"
+require "user.main"
 require "user.keymaps"
-require "user.telescope"
-require "user.themery"
-require 'user.treesitter'
-require 'user.lualine'
-require 'user.lsp.init'
-require 'user.neoscroll'
-require 'user.alpha'
-require 'user.search'
-require 'user.toggleterm'
-require 'user.null-ls'
-require 'user.persistence'
-require 'user.remote'
-require 'user.setup'
-
