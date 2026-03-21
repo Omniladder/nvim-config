@@ -21,7 +21,7 @@ local packages = {
   "catppuccin/nvim",
   "bluz71/vim-moonfly-colors",
   "ribru17/bamboo.nvim",
-  "christoomey/vim-tmux-navigator"
+  "christoomey/vim-tmux-navigator",
 
   -- Treesitter
   {
