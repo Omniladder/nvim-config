@@ -1,5 +1,3 @@
--- File Dedicated too assigning each keymapping
-
 -- variables
 local telescope = require('telescope.builtin')
 local map = vim.keymap.set;
@@ -28,6 +26,17 @@ vim.g.maplocalleader = " "
     map("n", "<C-j>", "<C-w>j")
     map("n", "<C-k>", "<C-w>k")
     map("n", "<C-l>", "<C-w>l")
+
+
+-- File Dedicated too assigning each keymapping
+--
+vim.g.tmux_navigator_no_mappings = 1
+
+vim.keymap.set("n", "<C-h>", "<cmd><C-U>TmuxNavigateLeft<CR>")
+vim.keymap.set("n", "<C-j>", "<cmd><C-U>TmuxNavigateDown<CR>")
+vim.keymap.set("n", "<C-k>", "<cmd><C-U>TmuxNavigateUp<CR>")
+vim.keymap.set("n", "<C-l>", "<cmd><C-U>TmuxNavigateRight<CR>")
+
 
     -- Folding
     vim.api.nvim_set_keymap('n', '<leader>z', 'za', { noremap = true, silent = true })
